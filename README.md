@@ -1,0 +1,2 @@
+# FFbot
+Devops practice application
