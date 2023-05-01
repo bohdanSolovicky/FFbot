@@ -52,7 +52,8 @@ to quickly create a Cobra application.`,
 			switch payload {
 			case "hello":
 				err = m.Send(fmt.Sprintf("Hello, i'm FFbot %s!", appVersion))
-
+			default:
+				err = m.Send(fmt.Sprintln("It is first verstion of this bot, i only react to \"hello\""))
 			}
 
 			return err
