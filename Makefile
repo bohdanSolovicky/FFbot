@@ -29,4 +29,4 @@ push:
 	docker push $(USER)/$(APP):$(VERSION)-$(TARGETARCH)
 
 clean:
-	rm -rf ffbot
+	docker rmi $(USER)/$(APP):$(VERSION)-$(TARGETARCH)
